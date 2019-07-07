@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 </head>
 
-<body id="body">
+<body>
 
     <div id="profile">
         <h1 id="title">Charlie Boyer</h1>
@@ -24,7 +24,7 @@
 
         <div id="profile_intro">
             <p>
-                <h2>Bonjour !</h2>
+                <span>Bonjour !</span>
                 Je suis Charlie Boyer, étudiant à Epitech, école de développement informatique,
                 je suis actuellement en recherche d'un stage de 4 à 6 mois, intégré à ma
                 formation.
@@ -48,8 +48,8 @@
     <hr>
 
     <div id="formation">
-        <h3>Formations :</h3>
-        <div id="diplome_1">
+        <h2>Formations</h2>
+        <div class="diplome_item">
             <p>
                 <ul>
                     <li>2018 - 2023</li>
@@ -58,13 +58,13 @@
                 </ul>
             </p>
         </div>
-        <div id="diplome_2">
+        <div class="diplome_item">
             <p>
                 <ul>
                     <li>2018</li>
                     <li>Baccalauréat Technologique STI2D ¤ <span>mention "très bien"</span></li>
                     <li><span>Specialité :</span> Science de l'Information et du Numérique</li>
-                    <li>Lycée polyvalent "Albert Claveille" ¤ Périgueux (24) </li>
+                    <li>Lycée polyvalent "Albert Claveille" ¤ Périgueux (24)</li>
                 </ul>
             </p>
         </div>
@@ -74,10 +74,10 @@
     <hr>
 
     <div id="skills">
-        <h3>Compétences :</h3>
+        <h2>Compétences</h2>
         
         <div class="skills_line">
-            <h4>Standard :</h4>
+            <h3>Standard</h3>
             <div class="skill_block">
                 <p>Langage C</p>
                 <div class="mastery">Bonne maîtrise</div>
@@ -90,7 +90,7 @@
         </div>
 
         <div class="skills_line">
-            <h4>Hardware :</h4>
+            <h3>Hardware</h3>
             <div class="skill_block">
                 <p>Administration Systèmes</p>
                 <div class="mastery">Concepts Intermediaires</div>
@@ -108,7 +108,7 @@
         </div>
 
         <div class="skills_line">
-            <h4>Web :</h4>
+            <h3>Web</h3>
             <div class="skill_block">
                 <p>HTML 5</p>
                 <div class="mastery">Essentiel</div>
@@ -126,7 +126,7 @@
         </div>
         
         <div class="skills_line">
-            <h4>Compétences interpersonelles</h4>
+            <h3>Compétences interpersonelles</h3>
             <div class=skill_block>
                 <p>Anglais</p>
                 <div class="mastery">TOEIC [750] ou niveau Européen B2</div>
@@ -158,11 +158,11 @@
     <hr>
 
     <div id="experiences">
-        <h3>Experiences Professionnelles / Projets :</h3>
+        <h2>Experiences Professionnelles / Projets :</h2>
         <div>
             <div class="project_block">
                 <p>myRPG<br>
-                <span>Objectif :</span> Création d'un jeu vidéo en équipe
+                <span>Objectif</span> Création d'un jeu vidéo en équipe
                     <ul>
                         <li>Langage C et librarie graphique CSFML</li>
                         <li>Organisation et gestion de projet</li>
@@ -172,38 +172,83 @@
 
             <div class="project_block">
                     <p>myWEB<br>
-                    <span>Objectif :</span> Créer un réseaux entre 2 machines virtuelles 
+                    <span>Objectif</span> Créer un réseaux entre 2 machines virtuelles 
                         <ul>
-                            <li><!-- Description du my Web --></li>
+                            <li>Initiation à la configuration réseau</li>
+                            <li>Configuration de machines virtuelles cliente/serveur</li>
+                            <li>Installation et parametrage de systèmes d'exploitation</li>
                         </ul>
                     </p>
             </div>
 
-            <!-- Insérer plus de "block" projets -->
+            <div class="project_block">
+                <p>Minishell<br>
+                <span>Objectif</span> Créer un interpréteur de commandes en C, comme "Bash" ou "tcsh" 
+                    <ul>
+                        <li>Initiation à la gestion et à la communication inter-processus</li>
+                        <li>Reprogrammation de fonctions systèmes (ou "buit-in") comme les commandes "ls" ou "cd"</li>
+                        <li>Gestion des ressources et éxecution d'éxécutables ou de scripts</li>
+                    </ul>
+                </p>
         </div>
 
+        <div class="project_block">
+            <p>EPyTodo<br>
+            <span>Objectif </span> Développement d'une API Web de prise de notes 
+                <ul>
+                    <li>Initiation au langages web (HTML 5, CSS 3, JavaScript 5)</li>
+                    <li>Découverte de Python</li>
+                    <li>Gestion de bases de données (mySQL)</li>
+                </ul>
+            </p>
+        </div>
+
+            <!-- Plus de "block" projets possibles -->
+    </div>
+
+    <!--<div class="separator"></div>-->
+    <hr>
+
+    <div id="perso">
+        <h2>Centres d'intérêts</h2>
+        <div class="perso_block">
+            <h3>Vie Associative</h3>
+            <p>
+                Je suis tuteur d’un élève de collège et je lui fournis un soutien scolaire en<br>
+                renforçant ses bases pour l’amener vers la réussite.
+            </p>
+        </div>
+
+        <div class="perso_block">
+            <h3>Hobbies</h3>
+            <p>
+                Passionné depuis tout jeune par l’astronomie, les phénomènes physiques et les<br>
+                nouvelles technologies, je me tiens au courant des dernières découvertes<br>
+                technologiques et scientifiques et adore apprendre dans tous les domaines.
+            </p>
+        </div>
     </div>
 
     <!--<div class="separator"></div>-->
     <hr>
 
     <div id="contact">
-        <h3>Contact :</h3>
+        <h2>Contact :</h2>
         <div class="contact_item">
             <!-- Attention aux robots -->
             <p><div class="icon">Email:</div> charlie.boyer@epitech.eu</p>
         </div>
 
         <div class="contact_item">
-            <p><div class="icon">Tel:</div> 07.81.68.66.64</p>
+            <p><div class="icon">Tel</div> 07.81.68.66.64</p>
         </div>
 
         <div class="contact_item">
-            <p><div class="icon">Linkedin:</div> disponible</p>
+            <p><div class="icon">Linkedin</div> disponible</p>
         </div>
 
         <div class="contact_item">
-            <p><div class="icon">Github:</div> <a href="https://github.com/CharlieBoyer">https://github.com/CharlieBoyer</a></p>
+            <p><div class="icon">Github</div><a href="https://github.com/CharlieBoyer">https://github.com/CharlieBoyer</a></p>
         </div>
     </div>
     
