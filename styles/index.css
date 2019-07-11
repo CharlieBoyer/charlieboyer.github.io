@@ -1,0 +1,171 @@
+.nav_box {
+    float: right;
+    margin: 2.3%;
+    margin-right: 6%;
+    width: 12em;
+    height: 10.5em;
+    border-radius: 5px;
+    background-color: #4725bd;
+    padding: 0.5em;  
+}
+
+.no_margin { margin: 0 }
+.centered { text-align: center }
+.bold { font-weight: bold }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #07132b;
+    color: #60d0fb;
+}
+
+#title {
+    color: white;
+    background-image: url("file:///C:/Users/Charlie/DevWork/GitHub/WebCV/assets/kurzgesagt_string_theory.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 26%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-size: 4em;
+    font-family: "Baumans", sans-serif;
+}
+
+h2 {
+    font-family: 'Baumans', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    color: #f3826d;
+}
+
+h3 {
+    font-family: 'Baumans', sans-serif;
+    color: #f3826d;
+}
+
+.kurzgesagt {
+    padding-left: 84%;
+    padding-top: 3%;
+}
+
+.kurzegast > a { margin-right: 0 }
+.kurzgesagt > a:link, .kurzgesagt > a:visited { color: white }
+
+#section_1 {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 3%;
+}
+
+#profile_intro {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    text-align: left ;
+}
+
+#profile_intro > p > span {
+    font-weight: 700;
+    font-size: 200%;
+}
+
+#nav_list > ul > li { color: #FFFF }
+#nav_list > ul > li > a:link { color: #FFFF }
+#nav_list > ul > li > a:visited { color: #2fc4fe }
+
+#formation {
+    block-size: 250px;
+    margin-bottom: 6%;
+}
+
+.formation_item {
+    float: left;
+    margin: 3.5%;
+    padding: 0;  
+    width: 42.5%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: #4725bd;
+    color: #FFFF
+}
+
+.formation_item > p { margin: 5% }
+.formation_item > p > span { font-style: italic ; text-decoration: underline }
+
+#section_2 {
+    background-image: url("file:///C:/Users/Charlie/DevWork/GitHub/WebCV/assets/kurzgesagt_space_elevator.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#skills {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 3%;
+}
+
+#skills > h2 {
+    margin-bottom: 0;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#second_ref {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+/* .skills_line:nth-child(4) > h3 {
+    
+} */
+
+.skills_line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+.skills_line > h3 { padding-top: 5% }
+
+.skill_block {
+    float: left;
+    margin: 1.5%;
+    padding: 1%;  
+    width: 15%;
+    height: 4%;
+    border-radius: 5px;
+    background-color: #5f268f;
+    color: #FFFF
+}
+
+.small_block { width: 10% }
+.med_block { width: 11% }
+.large_block { width: 18% }
+
+#section_3 {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 3%;
+}
+
+#experiences > h2 { text-align: center ; margin-bottom: 0 }
+
+.columns {
+    column-count: 2;
+}
+
+.project_block {
+    padding : 3%;
+}
+
+#perso { text-align: center }
+
+#perso > h2 { 
+    margin-top: 0;
+}
