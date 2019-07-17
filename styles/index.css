@@ -12,6 +12,19 @@ body {
     color: #60d0fb;
 }
 
+h1 {
+    margin: 0;
+    font-size: 8vw;
+    font-family: "Baumans", sans-serif;
+}
+
+h2 {
+    font-family: 'Baumans', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    color: #f3826d;
+}
+
 h3 {
     font-family: 'Baumans', sans-serif;
     color: #f3826d;
@@ -41,12 +54,6 @@ h3 {
     padding-bottom: 4%;
 }
 
-h1 {
-    margin: 0;
-    font-size: 8vw;
-    font-family: "Baumans", sans-serif;
-}
-
 #section_1 {
     margin-left: 7.5%;
     margin-right: 7.5%;
@@ -57,69 +64,80 @@ h1 {
 #nav_list > ul > li > a:link { color: #FFFF }
 #nav_list > ul > li > a:visited { color: #2fc4fe }
 
-#nav_list > ul > li > a { font-size: 4vw }
-
+/* Small screens [ 0px >>> 601px ] */
 @media (min-width: 0px) and (max-width: 601px) {
     .nav_box {
         display: inline-block;
-        margin-left: 15vw;
+        margin-left: 22%;
         height: auto;
         border-radius: 2%;
         background-color: #4725bd;
         padding-right: 10%;  
     }
     
+    #nav_list > ul > li > a { font-size: 4vw }
+    
+    #formation {
+        block-size: 250px;
+        margin-bottom: 6%;
+    }
+    
     .formation_item {
         float: left;
         margin: 3.5%;
-        width: 42.5 vw;
+        width: 90%;
+        border-radius: 5px;
+        background-color: #4725bd;
+        color: #FFFF
+    }
+    
+    #profile_intro { margin-top: 5% }
+}
+
+/* Medium screens [ 602px >>> 900px ] <!> This range may be change <!> */
+@media (min-width: 602px) and (max-width: 900px) {
+    .nav_box {
+        float: right;
+        border-radius: 5px;
+        background-color: #4725bd;
+        padding-right: 5%;
+        margin: 2.3%;
+        margin-top: 0;
+    }
+    
+    #nav_list > ul > li > a { font-size: 150% }
+    #formation > h2 { padding-top: 2% }
+    #formation > .formation_item > p { font-size: 2.5vw }
+    
+    .formation_item {
+        float: left;
+        margin: 3.5%;
+        width: 42.5%;
+        min-height: 35vw;
+        height: auto;
         border-radius: 5px;
         background-color: #4725bd;
         color: #FFFF
     }
 }
 
-@media (min-width: 602px) and (max-width: 900px) {
-    .nav_box {
-        float: right;
-        margin: 2.3%;
-        margin-right: 6%;
-        width: 3vw;
-        height: 20vw;
-        border-radius: 5px;
-        background-color: #4725bd;
-        padding: 0.5em;  
-    }
-}
-
-h2 {
-    font-family: 'Baumans', sans-serif;
-    font-size: 150%;
-    font-weight: bold;
-    color: #f3826d;
-}
-
 #profile_intro {
-    padding-top: 5%;
     padding-bottom: 3%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     text-align: center;
 }
 
 #profile_intro > p > span {
     font-weight: 700;
-    font-size: 9vw;
+    font-size: 7vw;
 }
 
-#formation {
-    block-size: 250px;
-    margin-bottom: 6%;
-}
 
 div.formation_item p { margin: 5% ; text-align: center }
 div.formation_item > p > span {
     font-style: italic;
     text-decoration: underline;
+    text-align: center;
 }
 
 #section_2 {
