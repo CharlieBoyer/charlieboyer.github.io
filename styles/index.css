@@ -2,6 +2,7 @@
 
 /* Standard classes for text-style */
 .no_margin { margin: 0 }
+.no_padding { padding: 0 }
 .centered { text-align: center }
 .bold { font-weight: bold }
 
@@ -11,46 +12,80 @@ body {
     color: #60d0fb;
 }
 
-#title {
+h3 {
+    font-family: 'Baumans', sans-serif;
+    color: #f3826d;
+}
+
+#head {
     color: white;
     background-image: url("/assets/kurzgesagt_string_theory.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-h1 {
-    margin: 0;
-    padding-top: 26%;
-    padding-bottom: 3%;
-    padding-left: 5%;
-    font-size: 4em;
-    font-family: "Baumans", sans-serif;
-}
-
-h2 {
-    font-family: 'Baumans', sans-serif;
-    font-size: 150%;
-    font-weight: bold;
-    color: #f3826d;
-}
-
-h3 {
-    font-family: 'Baumans', sans-serif;
-    color: #f3826d;
-}
-
 .kurzgesagt {
-    padding-left: 84%;
+    font-size: 2.5vw;
+    padding-left: 80%;
     padding-top: 3%;
 }
 
 .kurzegast > a { margin-right: 0 }
 .kurzgesagt > a:link, .kurzgesagt > a:visited { color: white }
 
+#head { margin-bottom: 5% }
+
+#title {
+    margin-left: 3%;
+    margin-top: 19%;
+    padding-bottom: 4%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 8vw;
+    font-family: "Baumans", sans-serif;
+}
+
 #section_1 {
     margin-left: 7.5%;
     margin-right: 7.5%;
     margin-bottom: 3%;
+}
+
+@media (max-width: 320px) {
+    .nav_box {
+        margin-left: 12%;
+        width: 60vw;
+        height: 54vw;
+        border-radius: 2%;
+        background-color: #4725bd;
+        padding: 0.5em;  
+    }
+}
+
+@media (max-width: 580px) {
+    .nav_box {
+        float: right;
+        margin: 2.3%;
+        margin-right: 6%;
+        width: 3vw;
+        height: 20vw;
+        border-radius: 5px;
+        background-color: #4725bd;
+        padding: 0.5em;  
+    }
+}
+
+#nav_list > ul > li { color: #FFFF }
+#nav_list > ul > li > a:link { color: #FFFF }
+#nav_list > ul > li > a:visited { color: #2fc4fe }
+
+h2 {
+    font-family: 'Baumans', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    color: #f3826d;
 }
 
 #profile_intro {
@@ -65,20 +100,6 @@ h3 {
     font-size: 200%;
 }
 
-.nav_box {
-    float: right;
-    margin: 2.3%;
-    margin-right: 6%;
-    width: 12em;
-    height: 10.5em;
-    border-radius: 5px;
-    background-color: #4725bd;
-    padding: 0.5em;  
-}
-
-#nav_list > ul > li { color: #FFFF }
-#nav_list > ul > li > a:link { color: #FFFF }
-#nav_list > ul > li > a:visited { color: #2fc4fe }
 
 #formation {
     block-size: 250px;
@@ -147,10 +168,8 @@ h3 {
 .med_block { width: 11% }
 .large_block { width: 18% }
 
-
 .star { font-size: 100% }
 .white { color: white }
-.black { color: black }
 
 #section_3 {
     margin-left: 7.5%;
