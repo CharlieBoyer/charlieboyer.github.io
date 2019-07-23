@@ -8,13 +8,11 @@
     <meta charset="UTF-8">
     <meta name="author" content="Charlie Boyer">
     <meta name="description" content="WebCV de Charlie Boyer, développeur en formation à Epitech Bordeaux - Promo 2023">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link href="styles/index.css" type="text/css" rel="styleSheet">
     <link href="styles/all.css" rel="styleSheet">
     <link href="https://fonts.googleapis.com/css?family=Baumans|Raleway&display=swap" rel="styleSheet"> 
-    <!-- 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    -->
-    <script src="./javascript/javascript.js"></script>
+    <script src="./javascript/javascript.js" async></script>
 </head>
 
 <body class="no_margin">
@@ -27,12 +25,27 @@
         </div>
     </div>
 
+    <div id="menu_nav">
+        <div id="navigation_bar">
+            <a href="#formation"><i class="fa fa-user-astronaut"></i><br><span>Formations</span></a>
+            <a href="#skills"><i class="fa fa-cubes"></i><br><span>Compétences</span></a>
+            <a href="#experiences"><i class="fa fa-project-diagram"></i><br><span>Projets</span></a>
+            <a href="#contact"><i class="fa fa-address-card"></i><br><span>Contact</span></a>
+        </div>    
+    </div>
+    <!--
+    <div id="top_page">
+        <button>
+            <i class="fa fa-angle-double-up white"></i>
+        </button>
+    </div>
+    -->
+
     <div id="section_1">
         <div>
             <div id="nav_list" class="nav_box">
                 <ul>
-                    <li><a href="#top">Haut de Page</a></li>
-                    <li><a href="#profile">Profile</a></li>
+
                     <li><a href="#formation">Formations</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#experiences">Experiences Pro</a></li>
@@ -50,7 +63,6 @@
                     intégré à ma formation dans le secteur de l'informatique.
                 </p>
             </div>
-
         </div>
 
         <div id="formation">
@@ -62,6 +74,7 @@
                     Epitech Bordeaux (33)
                 </p>
             </div>
+
             <div class="formation_item no_padding">
                 <p>
                     <span>2018</span><br><br>
@@ -71,6 +84,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <div id="section_2">
         <div id="skills">
@@ -80,8 +94,9 @@
                 <a href="https://kurzgesagt.org/">kurzgesagt.org</a>
             </div>
             <br>
+            <h3 class="no_margin centered type-alt">Standard</h3>
             <div class="skills_line">
-                <h3 class="no_margin">Standard</h3>
+                <h3 class="no_margin centered type">Standard</h3>
                 <div class="skill_block med_block">
                     <p>Langage C</p>
                     <div class="level">
@@ -107,22 +122,23 @@
                 </div>
             </div>
 
+            <h3 class="no_margin centered type-alt">Hardware</h3>
             <div class="skills_line">
-                <h3 class="no_margin">Hardware</h3>
+                <h3 class="no_margin centered type">Hardware</h3>
                 <div class="skill_block large_block">
-                    <p>Administration Systèmes</p>
+                    <p>Admin. Systèmes et Réseaux</p>
                     <div class="level">
                         <span class="star white"><i class="fas fa-star"></i></span>
                         <span class="star white"><i class="fas fa-star"></i></span>
                         <span class="star white"><i class="far fa-star"></i></span>
                         <span class="star white"><i class="far fa-star"></i></span>
                         <span class="star white"><i class="far fa-star"></i></span>
-                        <p>Essentiel</p>
+                        <p class="no_margin-bot">Essentiel</p>
                     </div>
                 </div>
 
                 <div class="skill_block med_block">
-                    <p>Env.Linux</p>
+                    <p>Linux</p>
                     <div class="level">
                         <span class="star white"><i class="fas fa-star"></i></span>
                         <span class="star white"><i class="fas fa-star"></i></span>
@@ -134,7 +150,7 @@
                 </div>
 
                 <div class="skill_block med_block">
-                    <p>Env. Windows</p>
+                    <p>Windows</p>
                     <div class="level">
                         <span class="star white"><i class="fas fa-star"></i></span>
                         <span class="star white"><i class="fas fa-star"></i></span>
@@ -146,8 +162,9 @@
                 </div>
             </div>
 
+            <h3 class="no_margin centered type-alt">Web</h3>
             <div class="skills_line">
-                <h3 class="no_margin">Web</h3>
+                <h3 class="no_margin centered type">Web</h3>
                 <div class="skill_block small_block">
                     <p>HTML 5</p>
                     <div class="level">
@@ -156,7 +173,7 @@
                         <span class="star white"><i class="fas fa-star"></i></span>
                         <span class="star white"><i class="far fa-star"></i></span>
                         <span class="star white"><i class="far fa-star"></i></span>
-                        <p>Intermediaire</p>
+                        <p>Intermédiaire</p>
                     </div>
                 </div>
 
@@ -168,7 +185,7 @@
                         <span class="star white"><i class="fas fa-star"></i></span>
                         <span class="star white"><i class="far fa-star"></i></span>
                         <span class="star white"><i class="far fa-star"></i></span>
-                        <p>Intermediaire</p>
+                        <p>Intermédiaire</p>
                     </div>
                 </div>
 
@@ -185,15 +202,21 @@
                 </div>
             </div>
             
+            <h3 class="no_margin centered type-alt">Compétences interpersonelles</h3>
+            <div id="langage_block_alt">
+                <p>Anglais<br>
+                TOEIC [750] ou niveau B2
+                </p>
+            </div>
             <div class="skills_line">
-                <h3 class="no_margin">Compétences interpersonelles</h3>
-                <div class=skill_block>
+                <h3 class="no_margin centered type">Compétences<br>interpersonelles</h3>
+                <div id="langage_block" class="skill_block">
                     <p>Anglais</p>
-                    <div class="mastery">TOEIC [750]<br>ou niveau B2</div>
+                    <span>TOEIC [750] ou niveau B2</span>
                 </div>
 
                 <div class="skill_block">
-                    <p>Relationel amical</p>
+                    <p>Volontaire</p>
                 </div>
 
                 <div class="skill_block">
