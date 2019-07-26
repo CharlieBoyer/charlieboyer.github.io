@@ -10,12 +10,15 @@
     <meta name="description" content="WebCV de Charlie Boyer, développeur en formation à Epitech Bordeaux - Promo 2023">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link href="styles/index.css" type="text/css" rel="styleSheet">
+    <link href="styles/rainbow-border.css" type="text/css" rel="styleSheet">
+    <link href="styles/carousel-ho.css" type="text/css" rel="styleSheet">
+    <link href="styles/carousel-ve.css" type="text/css" rel="styleSheet">
     <link href="styles/all.css" rel="styleSheet">
     <link href="https://fonts.googleapis.com/css?family=Baumans|Raleway&display=swap" rel="styleSheet"> 
-    <script src="./javascript/javascript.js" async></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
 </head>
 
-<body class="no_margin">
+<body class="no_margin" onscroll="checkScroll()">
     <div id="head">
         <div class="kurzgesagt">
             <a href="https://kurzgesagt.org/">kurzgesagt.org</a>
@@ -33,27 +36,26 @@
             <a href="#contact"><i class="fa fa-address-card"></i><br><span>Contact</span></a>
         </div>    
     </div>
-    <!--
-    <div id="top_page">
-        <button>
-            <i class="fa fa-angle-double-up white"></i>
-        </button>
-    </div>
-    -->
+
+    <div id="menu_nav_alt">
+            <div id="navigation_bar_alt">
+                <div class="flex_nav">
+                    <a href="#formation"><i class="fa fa-user-astronaut"></i><br><span>Formations</span></a>
+                    <a href="#skills"><i class="fa fa-cubes"></i><br><span>Compétences</span></a>
+                </div>
+                <div class="flex_nav">
+                    <a href="#experiences"><i class="fa fa-project-diagram"></i><br><span>Projets</span></a>
+                    <a href="#contact"><i class="fa fa-address-card"></i><br><span>Contact</span></a>
+                </div>
+            </div>    
+        </div>
+
+    <button id="top_page" onclick="topPageButton()">
+        <i class="fa fa-arrow-circle-up white"></i>
+    </button>
 
     <div id="section_1">
         <div>
-            <div id="nav_list" class="nav_box">
-                <ul>
-
-                    <li><a href="#formation">Formations</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#experiences">Experiences Pro</a></li>
-                    <li><a href="#perso">Centre d'intérêts</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
             <div id=profile_intro>
                 <p class="no_margin">
                     <span>Bonjour !</span><br>
@@ -84,7 +86,6 @@
             </div>
         </div>
     </div>
-</div>
 
     <div id="section_2">
         <div id="skills">
@@ -236,11 +237,11 @@
 
     <div id="section_3">
         <div id="experiences">
-            <h2>Experiences Professionnelles / Projets :</h2>
-            <div class="columns">
-                <div class="project_block">
-                    <p>myRPG<br>
-                    <span>Objectif</span> Création d'un jeu vidéo en équipe
+            <h2>Projets</h2>
+            <div class="project_container">
+                <div class="project_block blue_border" onmouseover="setRainbowBorder()" onclick="returnToBlueBorder()">
+                    <p><span class="project_title">myRPG</span><br><br>
+                    <span class="objectives italic underlined">Objectif</span> Création d'un jeu vidéo en équipe
                         <ul>
                             <li>Langage C et librarie graphique CSFML</li>
                             <li>Organisation et gestion de projet</li>
@@ -249,9 +250,9 @@
                     </p>
                 </div>
 
-                <div class="project_block">
-                        <p>myWEB<br>
-                        <span>Objectif</span> Créer un réseaux entre 2 machines virtuelles 
+                <div class="project_block purple_border" onmouseover="setRainbowBorder()" onclick="returnToPurpleBorder()">
+                        <p><span class="project_title">myWeb</span><br><br>
+                        <span class="objectives italic underlined">Objectif</span> Créer un réseaux entre 2 machines virtuelles 
                             <ul>
                                 <li>Initiation à la configuration réseau</li>
                                 <li>Configuration de machines virtuelles cliente/serveur</li>
@@ -260,21 +261,21 @@
                         </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="project_block">
-                    <p>EPyTodo<br>
-                        <span>Objectif</span> Développement d'une API Web de prise de notes 
+            <div class="project_container">
+                <div class="blue_border project_block" onmouseover="setRainbowBorder()" onclick="returnToBlueBorder()">
+                    <p><span class="project_title">EPyTodo</span><br><br>
+                        <span class="objectives italic underlined">Objectif</span> Développement d'une API Web de prise de notes 
                         <ul>
-                            <li>Initiation au langages web (HTML 5, CSS 3, JavaScript 5)</li>
+                            <li>Initiation au langages web (HTML 5, CSS 3, JavaScript)</li>
                             <li>Découverte de Python</li>
                             <li>Gestion de bases de données (mySQL)</li>
                         </ul>
                     </p>
                 </div>
 
-                <div class="project_block">
-                    <p>Minishell<br>
-                    <span>Objectif</span> Créer un interpréteur de commandes en C, comme "Bash" ou "tcsh" 
+                <div class="project_block purple_border" onmouseover="setRainbowBorder()" onclick="returnToPurpleBorder()">
+                    <p><span class="project_title">Minishell</span><br><br>
+                    <span class="objectives italic underlined">Objectif</span> Créer un interpréteur de commandes en C, comme "Bash" ou "tcsh" 
                         <ul>
                             <li>Initiation à la gestion et à la communication inter-processus</li>
                             <li>Reprogrammation de fonctions systèmes (ou "buit-in") comme les commandes "ls" ou "cd"</li>
@@ -290,27 +291,29 @@
             <div class="perso_block">
                 <h3>Vie Associative</h3>
                 <p>
-                    Je suis tuteur d’un élève de collège et je lui fournis un soutien scolaire en<br>
-                    renforçant ses bases pour l’amener vers la réussite.
+                    Je suis tuteur d’un élève de collège et je lui
+                    fournis un soutien scolaire en renforçant ses
+                    bases pour l’amener vers la réussite.
                 </p>
             </div>
 
             <div class="perso_block">
                 <h3>Hobbies</h3>
                 <p>
-                    Passionné depuis tout jeune par l’astronomie, les phénomènes physiques et les<br>
-                    nouvelles technologies, je me tiens au courant des dernières découvertes<br>
-                    technologiques et scientifiques et adore apprendre dans tous les domaines.
+                    Passionné depuis tout jeune par l’astronomie,
+                    les phénomènes physiques et les nouvelles
+                    technologies, je me tiens au courant des dernières
+                    découvertes technologiques et scientifiques et
+                    adore apprendre dans tous les domaines.
                 </p>
             </div>
         </div>
+    </div>
 
-        <!--<div class="separator"></div>-->
-        <hr>
+    <div id="section_4">
 
+        <h2 class="centered">Contact</h2>
         <div id="contact" class="bold">
-            <h2>Contact</h2>
-
             <div class="contact_container">
                 <div class="contact_item">
                     <!-- Attention aux robots -->
@@ -321,29 +324,45 @@
                 </div>
 
                 <div class="contact_item">
-                    <span class="contact_icon white">
+                    <span class="phone contact_icon white">
                         <i class="fas fa-phone"></i>
                     </span>
                     <p>07.81.68.66.64</p>
                 </div>
+            </div>
 
+            <div class="contact_container">
                 <div class="contact_item">
                     <span class="contact_icon white">
                         <i class="fab fa-linkedin"></i>
                     </span>
-                    <p><a href="https://www.linkedin.com/in/charlie-boyer-42a710179/">https://www.linkedin.com/in/charlie-boyer</a><p>
+                    <p><a href="https://www.linkedin.com/in/charlie-boyer-42a710179/">https://www.linkedin.com</a><p>
                 </div>
 
                 <div class="contact_item">
-                    <span class="contact_icon white">
+                    <span class="github contact_icon white">
                         <i class="fab fa-github-alt"></i>
                     </span>
                     <p><a href="https://github.com/CharlieBoyer">https://github.com/CharlieBoyer</a><p>
                 </div>
             </div>
-
         </div>
-    </div>    
+
+        <!-- New Contact carousel
+            <form id="contact">
+            <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
+            <input type="radio" name="fancy" value="hearts" id="hearts" />
+            <input type="radio" name="fancy" value="spades" id="spades" />
+            <input type="radio" name="fancy" value="diamonds" id="diamonds" />			
+            <label for="clubs">&#9827; Clubs</label><label for="hearts">&#9829; Hearts</label><label for="spades">&#9824; Spades</label><label for="diamonds">&#9830; Diamonds</label>
+
+            <div class="keys">Use left and right keys to navigate</div>
+        </form>
+        -->
+        
+    </div>
+<script src="./javascript/topPage.js"></script>
+<script src="./javascript/animation.js"></script>
 </body>
 
 </html>
