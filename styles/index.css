@@ -70,6 +70,10 @@ h3 {
     margin-right: 7.5%;
 }
 
+#section_1 {
+    margin-top: -75px;
+}
+
 #profile_intro {
     padding-bottom: 3%;
     margin-bottom: 7%;
@@ -356,10 +360,6 @@ div.formation_item > p > span {
         color: #FFFF
     }
     
-    #profile_intro {
-        margin-top: 5%;
-    }
-    
     #second_ref {
     	padding-top: 10%;
     	text-align: right;
@@ -522,7 +522,6 @@ div.formation_item > p > span {
         left: 0;
     }
 
-
     #formation > h2 {
         padding-top: 2%;
     }
@@ -537,7 +536,7 @@ div.formation_item > p > span {
         min-height: 35vw;
         height: auto;
         border-radius: 5px;
-        background-color: #4725bd;
+        background-color: #60d0fb;
         color: #FFFF
     }
 
@@ -666,10 +665,22 @@ div.formation_item > p > span {
         cursor: pointer;
         visibility: hidden;
         font-size: 300%;
+        color: #f3826d;
         background-color: transparent;
         border-color: transparent;
         position: sticky;
-        top: 80%;
+        top: 90%;
+        left: 100%;
+    }
+    #top_page:hover {
+        cursor: pointer;
+        visibility: hidden;
+        font-size: 300%;
+        color: #5f268f;
+        background-color: transparent;
+        border-color: transparent;
+        position: sticky;
+        top: 90%;
         left: 100%;
     }
 
@@ -727,7 +738,7 @@ div.formation_item > p > span {
         height: auto;
         font-size: 1.9vw;
         border-radius: 5px;
-        background-color: #4725bd;
+        background-color: #5f268f;
         color: #FFFF
     }
 
@@ -805,6 +816,7 @@ div.formation_item > p > span {
     .contact_icon {
         font-size: 250%;
         padding-left: 40%;
+        color: #BFEFFF;
     }
 
     div.contact_container div:nth-child(4) > a,
@@ -850,19 +862,15 @@ div.formation_item > p > span {
 
 i.fas.fa-star, i.fas.fa-star-half-alt {
     font-size: 100%;
-    animation: pulse 2s infinite;
+    animation: pulse 7.5s infinite;
 }
 
 @keyframes pulse {
-    0% { color: aqua }
-    25% { color: chartreuse }
-    50% { color: yellow }
-    75% { color: red }
-    100% { color: aqua}
+    50% { color: #c234f3 }
 }
 
 .white {
-    color: white;
+    color: pink;
 }
 
 #section_3 {
@@ -871,8 +879,8 @@ i.fas.fa-star, i.fas.fa-star-half-alt {
     margin-bottom: 3%;
 }
 
-.project_block:nth-child(1) > p > span.project_title { color: blue }
-.project_block:nth-child(2) > p > span.project_title { color: #7501FE }
+.project_block:nth-child(1) > p > span.project_title { color: #60d0fb }
+.project_block:nth-child(2) > p > span.project_title { color: #60d0fb }
 
 .project_block > p > span.project_title {
     font-family: 'Righteous', cursive;

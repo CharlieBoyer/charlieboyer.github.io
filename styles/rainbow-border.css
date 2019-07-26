@@ -4,11 +4,11 @@
 */
 
 .blue_border {
-    border: 3px dashed blue;
+    border: 3px dashed #60d0fb ;
 }
 
 .purple_border {
-    border: 3px dashed #7501FE;
+    border: 3px dashed #60d0fb;
 }
 
 @-webkit-keyframes rotate {
