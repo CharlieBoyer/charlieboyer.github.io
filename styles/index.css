@@ -120,6 +120,19 @@ div.formation_item > p > span {
         cursor: pointer;
         visibility: hidden;
         font-size: 100%;
+        color: #f3826d;
+        background-color: transparent;
+        border-color: transparent;
+        position: sticky;
+        top: 95%;
+        left: 0%;
+    }
+
+    #top_page:hover {
+        cursor: pointer;
+        visibility: hidden;
+        font-size: 100%;
+        color: #5f268f;
         background-color: transparent;
         border-color: transparent;
         position: sticky;
@@ -180,7 +193,7 @@ div.formation_item > p > span {
         margin: 3.5%;
         width: 90%;
         border-radius: 5px;
-        background-color: #4725bd;
+        background-color: #5f268f;
         color: #FFFF
     }
     
@@ -296,6 +309,19 @@ div.formation_item > p > span {
         cursor: pointer;
         visibility: hidden;
         font-size: 100%;
+        color: #f3826d;
+        background-color: transparent;
+        border-color: transparent;
+        position: sticky;
+        top: 95%;
+        left: 0%;
+    }
+
+    #top_page:hover {
+        cursor: pointer;
+        visibility: hidden;
+        font-size: 100%;
+        color: #5f268f;
         background-color: transparent;
         border-color: transparent;
         position: sticky;
@@ -356,7 +382,7 @@ div.formation_item > p > span {
         margin: 3.5%;
         width: 90%;
         border-radius: 5px;
-        background-color: #4725bd;
+        background-color: #5f268f;
         color: #FFFF
     }
     
@@ -469,6 +495,19 @@ div.formation_item > p > span {
         cursor: pointer;
         visibility: hidden;
         font-size: 200%;
+        color: #f3826d;
+        background-color: transparent;
+        border-color: transparent;
+        position: sticky;
+        top: 90%;
+        left: 0%;
+    }
+
+    #top_page:hover {
+        cursor: pointer;
+        visibility: hidden;
+        font-size: 200%;
+        color: #5f268f;
         background-color: transparent;
         border-color: transparent;
         position: sticky;
@@ -485,7 +524,7 @@ div.formation_item > p > span {
         position: sticky;
         top: 0;
         max-width: 100vw;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
         background-color: #07132b;
         border-radius: 4px;
         box-shadow: 0 9px 5px rgba(0, 0, 0, 0.3);
@@ -536,7 +575,7 @@ div.formation_item > p > span {
         min-height: 35vw;
         height: auto;
         border-radius: 5px;
-        background-color: #60d0fb;
+        background-color: #5f268f;
         color: #FFFF
     }
 
