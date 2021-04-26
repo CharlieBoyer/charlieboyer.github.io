@@ -1,0 +1,13 @@
+##
+## Last update : 27/04/2021
+## File description:
+## Prevents indicated files from being tracked by Git
+##
+
+# Exclude node_modules
+node_modules
+
+# Exclude additionnal folders
+build
+.vscode
+.bootstrap

@@ -1,0 +1,20 @@
+{
+  "name": "charlieboyer.github.io",
+  "version": "1.0.0",
+  "description": "## Personal project that aim to learn and develop HTML, CSS and JavaScript basics and make a Web Resume.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlieBoyer/charlieboyer.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlieBoyer/charlieboyer.github.io/issues"
+  },
+  "homepage": "https://github.com/CharlieBoyer/charlieboyer.github.io#readme"
+}
