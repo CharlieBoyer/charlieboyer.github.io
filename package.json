@@ -2,9 +2,25 @@
   "name": "charlieboyer.github.io",
   "version": "1.0.0",
   "description": "## Personal project that aim to learn and develop HTML, CSS and JavaScript basics and make a Web Resume.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css:scss": "node-sass --output-style=compressed --output=build --recursive source/style",
+    "css:autoprefixer": "postcss --use autoprefixer --replace ./build/*.css",
+    "build:css": "run-p css:scss css:autoprefixer",
+    "watch:css": "onchange source/style -- npm run build:css",
+    "build:images": "imagemin source/assets/images/**/* --out-dir=build/assets",
+    "watch:images": "onchange source/assets/images -- npm run build:images",
+    "js:build": "tsc --pretty",
+    "js:lint": "eslint --config config/.eslintrc.json --ext \".ts,.tsx\" source/ts",
+    "js:fix": "eslint --config config/.eslintrc.json --ext \".ts,.tsx\" source/ts --fix",
+    "build:js": "webpack --mode=production",
+    "watch:js": "onchange source/ts -- webpack --mode=development",
+    "build:html": "posthtml --config config/posthtml.json",
+    "watch:html": "onchange source/views -- npm run build:html",
+    "serve": "browser-sync start --server build --files build",
+    "watch": "run-p build serve watch:*",
+    "build": "run-p build:*",
+    "clean": "del-cli build/*"
   },
   "repository": {
     "type": "git",
@@ -16,5 +32,27 @@
   "bugs": {
     "url": "https://github.com/CharlieBoyer/charlieboyer.github.io/issues"
   },
-  "homepage": "https://github.com/CharlieBoyer/charlieboyer.github.io#readme"
+  "homepage": "https://github.com/CharlieBoyer/charlieboyer.github.io#readme",
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.14",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.27.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "imagemin-cli": "^6.0.0",
+    "node-sass": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1",
+    "posthtml": "^0.15.2",
+    "posthtml-cli": "^0.9.2",
+    "posthtml-modules": "^0.7.4",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  }
 }
